@@ -1,0 +1,122 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  
+  --color-light: white;
+  --color-dark: #242424;
+  --color-primary: #0052FF;
+  --color-secondary:  #F2F0EC;
+  --color-dark-secondary: #313131;
+  --foreground: var(--color-dark);
+  --background: var(--color-light);
+  --button-color: #53c0f2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+body {
+  min-height: 100vh;
+  color: var(--foreground);
+  background-color: var(--background);
+}
+
+.button {
+  padding: .5em 1.4em;
+  font-size: 1em;
+  font-weight: 900;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background: var(--color-primary);
+  cursor: pointer;
+}
+.button__show-pass {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button__show-pass img {
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+  display: block;
+}
+.button:hover {
+  background: var(--button-color);
+}
+
+.button--secondary{
+  background: transparent;
+  border: 1px solid gray;
+}
+
+span {
+  padding: 0px .5em;
+}
+img {
+  max-width: 50px;
+  display: block;
+  /* border: 2px solid gray; */
+}
+
+a {
+  font-weight: 500;
+  color: #0052FF;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #53c0f2;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: var(--color-primary);
+}
+h1 span {
+  padding: 0;
+  color: var(--foreground);
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.dark-mode {
+  --background: var(--color-dark);
+  --foreground: var(--color-light);
+  --color-secondary: var(--color-dark-secondary);
+}
+
+.input {
+  padding: 0.8em;
+  width: 75%;
+  max-width: 500px;
+  font-size: 16px;
+  background: transparent;
+  background-repeat: no-repeat;
+  background-position: center right 15px;
+  border-color: black;
+  border-radius: 30px;
+  color: var(--foreground);
+  z-index: 1;
+}
+.input:focus {
+  background-color: var(--color-secondary);
+}
